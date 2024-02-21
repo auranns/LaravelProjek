@@ -32,3 +32,7 @@ Route::post('/kirim', [TestController::class, 'kirim']);
 
 Route::get('/dashboard', [DashboardController::class,'index']);
 Route::get('/pelanggan', [PelangganController::class,'index']);
+
+route::get('/pelanggan',[PelangganController::class,'index']);
+route::get('/tambahpelanggan',[PelangganController::class,'tambahpelanggan']);
+route::post('/pelanggan', [PelangganController::class, 'pelanggan']);

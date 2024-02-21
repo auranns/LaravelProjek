@@ -20,7 +20,7 @@
         <li class="nav-item active">
             <a class="nav-link" href="/pelanggan">
             <i class="fas fa-fw fa-users"></i>
-            <span>Pelanggan</span></a>
+            <span>Pelajar</span></a>
         </li>
 <!-- Divider -->
     <hr class="sidebar-divider my-0">
