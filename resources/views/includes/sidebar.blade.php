@@ -22,28 +22,13 @@
             <i class="fas fa-fw fa-users"></i>
             <span>Pelajar</span></a>
         </li>
-<!-- Divider -->
-    <hr class="sidebar-divider my-0">
-<!-- Nav Item - Dashboard -->
-    <li class="nav-item active">
-     <a class="nav-link" href="/barang"><i class="fas fa-fw fa-gift"></i>
-         <span>Barang</span>
-    </a>
-    </li>
-<!-- Divider -->
-    <hr class="sidebar-divider my-0">
-<!-- Nav Item - Dashboard -->
-    <li class="nav-item active">
-        <a class="nav-link" href="/kategori">
-            <i class="fas fa-fw fa-th-list"></i>
-        <span>Kategori</span></a>
-    </li>
+
 <!-- Divider -->
     <hr class="sidebar-divider my-0">
 <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
         <a class="nav-link" href="/transaksi">
             <i class="fas fa-fw fa-credit-card"></i>
-        <span>Transaksi</span></a>
+        <span></span></a>
     </li>
 </ul>

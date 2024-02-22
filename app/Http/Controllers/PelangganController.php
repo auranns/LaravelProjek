@@ -1,14 +1,18 @@
 <?php
 
 namespace App\Http\Controllers;
+use RealRashid\SweetAlert\Facades\Alert;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facedes\DB;
+use Illuminate\Support\Facades\DB; 
+
 class PelangganController extends Controller
 {
     public function index()
     {
-        return view('pelanggan.indexpelanggan');
+        $profil = DB::table('profil')->get();
+        
+        return view('pelanggan.indexpelanggan', compact('profil'));
     }
 
     public function tambahpelanggan()
@@ -24,10 +28,19 @@ class PelangganController extends Controller
             'alamat' => 'required|',
         ]);
 
-        DB::table('profile')-> insert([
+        DB::table('profil')-> insert([
             'nama_lengkap' => $request->nama,
             'no_hp' => $request->nohp,
             'alamat' => $request->alamat,
         ]);
+
+        Alert::success('Success', 'Data Berhasil');
+
+
         return redirect('/pelanggan');}
+
+        public function show($id){
+            $profile = DB::table('profil')->find($id);
+            return view('pelanggan.detailpelanggan', compact('profile'));
+        }
 }
