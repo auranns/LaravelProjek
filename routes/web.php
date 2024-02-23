@@ -37,13 +37,13 @@ Route::get('/pelanggan', [PelangganController::class,'index']);
 route::get('/pelanggan',[PelangganController::class,'index']);
 route::get('/tambahpelanggan',[PelangganController::class,'tambahpelanggan']);
 route::post('/pelanggan', [PelangganController::class, 'pelanggan']);
-<<<<<<< HEAD
+
 
 Route::get('/peserta', [PesertaController::class,'index']);
 
 Route::get('/peserta', [PesertaController::class, 'index']);
 Route::get('/tambah-peserta', [PesertaController::class, 'tambahpeserta']);
 Route::post('/tambah-peserta', [PesertaController::class, 'peserta']);
-=======
+
 Route::get('/pelanggan/{pelanggan_id}',[PelangganController::class, 'show']);
->>>>>>> c3d908ba837d33ee57445b337032e4791056ce2f
+
