@@ -65,7 +65,7 @@
             <!-- End of Footer -->
 
         </div>
-        <!-- End of Content Wrapper -->
+        <!-- End of Content Wrapperrrr -->
 
     </div>
     <!-- End of Page Wrapper -->
@@ -99,5 +99,6 @@
     @include('includes.script')
 
 </body>
+    @include('sweetalert::alert')
 
 </html>

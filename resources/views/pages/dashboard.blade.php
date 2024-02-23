@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('judul', 'Dashboard')
+@section('judul', 'Welcome to bimbel')
 
 @section('content')
                 

@@ -3,6 +3,7 @@
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HitungController;
 use App\Http\Controllers\PelangganController;
+use App\Http\Controllers\PesertaController;
 use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
@@ -36,3 +37,9 @@ Route::get('/pelanggan', [PelangganController::class,'index']);
 route::get('/pelanggan',[PelangganController::class,'index']);
 route::get('/tambahpelanggan',[PelangganController::class,'tambahpelanggan']);
 route::post('/pelanggan', [PelangganController::class, 'pelanggan']);
+
+Route::get('/peserta', [PesertaController::class,'index']);
+
+Route::get('/peserta', [PesertaController::class, 'index']);
+Route::get('/tambah-peserta', [PesertaController::class, 'tambahpeserta']);
+Route::post('/tambah-peserta', [PesertaController::class, 'peserta']);

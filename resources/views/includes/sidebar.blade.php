@@ -18,9 +18,9 @@
 <!-- Divider -->
     <hr class="sidebar-divider">
         <li class="nav-item active">
-            <a class="nav-link" href="/pelanggan">
+            <a class="nav-link" href="/peserta">
             <i class="fas fa-fw fa-users"></i>
-            <span>Pelajar</span></a>
+            <span>Data Peserta</span></a>
         </li>
 <!-- Divider -->
     <hr class="sidebar-divider my-0">

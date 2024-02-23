@@ -24,7 +24,8 @@ class PelangganController extends Controller
             'alamat' => 'required|',
         ]);
 
-        DB::table('profile')-> insert([
+
+        DB::table('profil')->insert([
             'nama_lengkap' => $request->nama,
             'no_hp' => $request->nohp,
             'alamat' => $request->alamat,
