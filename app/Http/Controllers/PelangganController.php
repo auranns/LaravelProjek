@@ -28,24 +28,12 @@ class PelangganController extends Controller
             'alamat' => 'required|',
         ]);
 
-<<<<<<< HEAD
-
-        DB::table('profil')->insert([
-=======
         DB::table('profil')-> insert([
->>>>>>> c3d908ba837d33ee57445b337032e4791056ce2f
             'nama_lengkap' => $request->nama,
             'no_hp' => $request->nohp,
             'alamat' => $request->alamat,
         ]);
 
         Alert::success('Success', 'Data Berhasil');
-
-
-        return redirect('/pelanggan');}
-
-        public function show($id){
-            $profile = DB::table('profil')->find($id);
-            return view('pelanggan.detailpelanggan', compact('profile'));
-        }
+       return redirect('/pelanggan');}
 }

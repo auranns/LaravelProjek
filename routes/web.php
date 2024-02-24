@@ -39,11 +39,12 @@ route::get('/tambahpelanggan',[PelangganController::class,'tambahpelanggan']);
 route::post('/pelanggan', [PelangganController::class, 'pelanggan']);
 
 
+
 Route::get('/peserta', [PesertaController::class,'index']);
 
 Route::get('/peserta', [PesertaController::class, 'index']);
 Route::get('/tambah-peserta', [PesertaController::class, 'tambahpeserta']);
 Route::post('/tambah-peserta', [PesertaController::class, 'peserta']);
 
-Route::get('/pelanggan/{pelanggan_id}',[PelangganController::class, 'show']);
+Route::get('/peserta/{peserta_id}',[PesertaController::class, 'show']);
 

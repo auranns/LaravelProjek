@@ -42,4 +42,9 @@ class PesertaController extends Controller
 
         return redirect('/peserta');
     }
+
+    public function show($id){
+        $peserta = DB::table('peserta')->find($id);
+        return view('peserta.detailpeserta', compact('peserta'));
+    }
 }
