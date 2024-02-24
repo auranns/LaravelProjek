@@ -35,12 +35,5 @@ class PelangganController extends Controller
         ]);
 
         Alert::success('Success', 'Data Berhasil');
-
-
-        return redirect('/pelanggan');}
-
-        public function show($id){
-            $profile = DB::table('profil')->find($id);
-            return view('pelanggan.detailpelanggan', compact('profile'));
-        }
+       return redirect('/pelanggan');}
 }
