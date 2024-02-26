@@ -10,6 +10,12 @@ class PesertaController extends Controller
     public function index()
     {
         $peserta = DB::table('peserta')->get();
+
+        $title = 'Warning !';
+        $text = "Apakah anda yakin ingin menghapus ?";
+        $icon = "Question";
+        confirmDelete($title, $text);
+
         return view('peserta.indexpeserta', compact('peserta'));
     }
 
@@ -46,5 +52,38 @@ class PesertaController extends Controller
     public function show($id){
         $peserta = DB::table('peserta')->find($id);
         return view('peserta.detailpeserta', compact('peserta'));
+    }
+    public function edit($id) {
+        $peserta = DB::table('peserta')->find($id);
+        return view('peserta.editpeserta', compact('peserta'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'paket' => 'required|',
+            'nama' => 'required|',
+            'umur' => 'required|',
+            'alamat' => 'required|',
+            'sekolah' => 'required|',
+            'jeniskelamin' => 'required|',
+        ]);
+        $request = DB::table('peserta')
+            ->where('id', $id)
+            ->update([ //kolom yang mau diambil
+                'paket_id' => $request->paket,
+                'nama' => $request->nama,
+                'umur' => $request->umur,
+                'alamat' => $request->alamat,
+                'sekolah' => $request->sekolah,
+                'jenis_kelamin' => $request->jeniskelamin,
+            ]);
+    Alert::success('Success', 'Data Berhasil di Update');
+    return redirect('/peserta');
+    }
+    public function destroy($id) {
+        $peserta = DB::table('peserta')->where('id', $id)->delete();
+        Alert::success('Success', 'Data Berhasil di Update');
+        return redirect('/peserta');
     }
 }

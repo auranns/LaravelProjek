@@ -47,4 +47,7 @@ Route::get('/tambah-peserta', [PesertaController::class, 'tambahpeserta']);
 Route::post('/tambah-peserta', [PesertaController::class, 'peserta']);
 
 Route::get('/peserta/{peserta_id}',[PesertaController::class, 'show']);
+Route::get('/peserta/{peserta_id}/edit',[PesertaController::class, 'edit']);
+Route::put('/peserta/{peserta_id}',[PesertaController::class, 'update']);
 
+Route::delete('/peserta/{peserta_id}',[PesertaController::class,'destroy']);
