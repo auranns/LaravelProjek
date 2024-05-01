@@ -1,12 +1,13 @@
 @extends('layouts.admin')
 
+
 @section('judul')
 Data Peserta
 @endsection
   <!-- Page Heading -->
 
 
-@section('tabel')
+@section('content')
 
 <div class="p-3">
 <a href="/tambah-peserta" class="btn btn-primary my-3">Tambah Data
@@ -51,6 +52,8 @@ Peserta</a>
         </table>
 </div>
 @endsection
+
+
 
 <link rel="stylesheet" type="text/css"
 href="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.css"/>

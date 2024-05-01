@@ -62,7 +62,6 @@
             <button type="submit" class="btn btn-primary">Update Data</button>
         </form>
 </div>
-
  
 @endsection
 
