@@ -1,11 +1,9 @@
 @extends('layouts.admin')
 
-@section('judul')
-Data Peserta
-@endsection
-    <!-- Page Heading -->
-
 @section('tabel')
+
+Data Peserta
+
 
 <div class="p-3">
 <a href="/tambahpeserta" class="btn btn-primary my-3">Tambah Data
