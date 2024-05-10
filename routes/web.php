@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HitungController;
 use App\Http\Controllers\HomeController;
@@ -18,20 +19,17 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/landingpage', function() {
-    return view ('landingpage');
-});
-
 Route::get('/landingpage', function (){
     return view('landingpage');
 });
 
-Route::get('/', [HitungController::class, 'hitung']);
 
-Route::get('/daftar', [TestController::class, 'daftar']);
-Route::post('/kirim', [TestController::class, 'kirim']);
+Route::get('/', function (){
+    return view('landingpage');
+});
 
+
+Route::middleware('Admin')->group(function () {
 Route::get('/dashboard', [DashboardController::class,'index']);
 Route::get('/pelanggan', [PelangganController::class,'index']);
 
@@ -50,3 +48,15 @@ Route::get('/peserta/{peserta_id}/edit',[PesertaController::class, 'edit']);
 Route::put('/peserta/{peserta_id}',[PesertaController::class, 'update']);
 
 Route::delete('/peserta/{peserta_id}',[PesertaController::class,'destroy']);
+});
+
+Route::get('/daftar', [TestController::class, 'daftar']);
+Route::post('/kirim', [TestController::class, 'kirim']);
+
+
+
+Route::get('/register', [AuthController::class, 'register'])->name('register');
+Route::post('/register', [AuthController::class, 'registerPost'])->name('register');
+
+Route::get('/login', [AuthController::class, 'login'])->name('login');
+Route::post('/login', [AuthController::class, 'loginPost'])->name('login');

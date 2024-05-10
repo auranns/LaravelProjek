@@ -21,7 +21,7 @@
 
     @section('content')
 
-    <div class="container">
+    <div class="container" style="font-family: 'Poppins', sans-serif; background-color: #ffffff;">
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Detail Data Profil Peserta ke {{$peserta->id}}</h4>
@@ -36,7 +36,7 @@
             </div>
         </div>
 
-        <a href="/peserta" class="btn">Kembali</a>
+        <a href="/peserta" class="btn btn-primary mt-3">Kembali</a>
     </div>
 
     @endsection
