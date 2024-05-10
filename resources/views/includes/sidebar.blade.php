@@ -1,27 +1,64 @@
- <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">    <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
-        <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-shopping-basket"></i>
-        </div>
-        <div class="sidebar-brand-text mx-3">TOKLINE</div>
-    </a>
-    <!-- Divider -->
-    <hr class="sidebar-divider my-0">
-    <!-- Nav Item - Dashboard -->
-    <li class="nav-item active">
-        <a class="nav-link" href="/dashboard">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="{{ asset ('adminpage/style.css') }}">
+
+    <title>Bubble Academy</title>
+</head>
+<body>
+
+
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+        <a href="#" class="brand">
+            <i class='bx bxs-smile'></i>
+            <span class="text">Admin</span>
         </a>
-    </li>
-    <!-- Divider -->
-    <hr class="sidebar-divider">
-    <li class="nav-item active">
-        <a class="nav-link" href="/peserta">
-            <i class="fas fa-fw fa-users"></i>
-            <span>Data Peserta</span>
-        </a>
-    </li>
-    <!-- Divider -->
-    <hr class="sidebar-divider my-0">
-</ul>
+        <ul class="side-menu top">
+            <li class="#">
+                <a href="/dashboard">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="text">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="/peserta">
+                    <i class='bx bx-user'></i>
+                    <span class="text">Data Peserta</span>
+                </a>
+            </li>
+            <li>
+                <a href="/landingpage">
+                    <i class='bx bx-home'></i>
+                    <span class="text">Landing page</span>
+                </a>
+            </li>
+
+           
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="#">
+                    <i class='bx bxs-cog'></i>
+                    <span class="text">Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="/login" class="logout">
+                    <i class='bx bxs-log-out-circle'></i>
+                    <span class="text">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+	<script src="{{ asset('adminpage/script.js') }}"></script>
+</body>
+</html>

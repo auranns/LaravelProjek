@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>Dashboard</title>
 
     @include('includes.style')
 

@@ -76,7 +76,7 @@
                         <h1>Tingkatkan kemahiran bahasa Inggris Anda dengan <span>Bubble Academy</span></h1>
                         <h2>Bersama-sama kita akan menjelajahi kedalaman bahasa dan membuka potensi penuh Anda!</h2>
                         <div class="text-center text-lg-start">
-                            <a href="#about" class="btn-get-started scrollto">Login</a>
+                            <a href="/login" class="btn-get-started scrollto">Login</a>
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
 
 
                         <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-                            <div class="icon"><i class="bx bx-fingerprint"></i></div>
+                            <div class="icon"><i class='bx bxs-group'></i></div>
                             <h4 class="title"><a href="">Guru Profesional</a></h4>
                             <p class="description">Di Bubble Academy, kualitas pengajaran sangatlah penting. Oleh karena itu, kami merekrut guru-guru yang berkualitas, berpengalaman, dan berkomitmen tinggi untuk membantu setiap siswa mencapai potensi terbaik mereka dalam belajar bahasa Inggris. Guru-guru kami tidak hanya mengajar, tetapi juga menjadi mentormu dalam perjalanan pembelajaranmu.</p>
                         </div>
@@ -162,31 +162,31 @@
                     </div>
                     <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
                         <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-                            <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
+                            <i class='bx bx-calendar' style="color: #5578ff;"></i>
                             <h3><a href="">Jadwal yang fleksibel </a></h3>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
                         <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
-                            <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
+                            <i class='bx bx-book' style="color: #e80368;"></i>
                             <h3><a href="">Buku pembelajaran</a></h3>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
                         <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-                            <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
+                            <i class='bx bx-food-menu'style="color: #e361ff;"></i>
                             <h3><a href="">Program belajar</a></h3>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 mt-4">
                         <div class="icon-box" data-aos="zoom-in" data-aos-delay="250">
-                            <i class="ri-database-2-line" style="color: #47aeff;"></i>
+                            <i class='bx bx-task' style="color: #47aeff;"></i>
                             <h3><a href="">Assesment akhir</a></h3>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 mt-4">
                         <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-                            <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
+                            <i class='bx bxs-id-card' style="color: #ffa76e;"></i>
                             <h3><a href="">Sertifikat kursus</a></h3>
                         </div>
                     </div>
@@ -220,7 +220,7 @@
 
                     <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
                         <div class="count-box">
-                            <i class="bi bi-headset"></i>
+                            <i class='bx bx-food-menu'></i>
                             <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
                             <p>Program</p>
                         </div>
