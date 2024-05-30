@@ -30,23 +30,30 @@ Route::get('/', function (){
 
 
 Route::middleware('Admin')->group(function () {
+
 Route::get('/dashboard', [DashboardController::class,'index']);
+
+
 Route::get('/pelanggan', [PelangganController::class,'index']);
 
-route::get('/pelanggan',[PelangganController::class,'index']);
-route::get('/tambahpelanggan',[PelangganController::class,'tambahpelanggan']);
-route::post('/pelanggan', [PelangganController::class, 'pelanggan']);
+route::get('/pelanggan',[PelangganController::class,'index']);//MENAMPILKAN TABEL
+route::get('/tambahpelanggan',[PelangganController::class,'tambahpelanggan']);//MENAMPILKAN FORM INPUTAN TAMBAH
+route::post('/pelanggan', [PelangganController::class, 'pelanggan']);//BERHASIL MENAMBAHKAN DATA KE DALAM TABEL
 
 Route::get('/peserta', [PesertaController::class,'index']);
-
+//TAMBAH
 Route::get('/peserta', [PesertaController::class, 'index']);
 Route::get('/tambah-peserta', [PesertaController::class, 'tambahpeserta']);
 Route::post('/tambah-peserta', [PesertaController::class, 'peserta']);
 
+//DETAIL
 Route::get('/peserta/{peserta_id}',[PesertaController::class, 'show']);
+
+//NGEDIT
 Route::get('/peserta/{peserta_id}/edit',[PesertaController::class, 'edit']);
 Route::put('/peserta/{peserta_id}',[PesertaController::class, 'update']);
 
+//HAPUS
 Route::delete('/peserta/{peserta_id}',[PesertaController::class,'destroy']);
 });
 

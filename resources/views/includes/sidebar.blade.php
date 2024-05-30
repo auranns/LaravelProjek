@@ -13,7 +13,6 @@
 </head>
 <body>
 
-
     <!-- SIDEBAR -->
     <section id="sidebar">
         <a href="#" class="brand">
@@ -39,8 +38,6 @@
                     <span class="text">Landing page</span>
                 </a>
             </li>
-
-           
         </ul>
         <ul class="side-menu">
             <li>
@@ -49,16 +46,21 @@
                     <span class="text">Settings</span>
                 </a>
             </li>
+           
+            @if(Auth::check())
             <li>
                 <a href="/login" class="logout">
                     <i class='bx bxs-log-out-circle'></i>
                     <span class="text">Logout</span>
                 </a>
             </li>
+            @endif
+            
         </ul>
     </section>
     <!-- SIDEBAR -->
 
-	<script src="{{ asset('adminpage/script.js') }}"></script>
+    <script src="{{ asset('adminpage/script.js') }}"></script>
 </body>
 </html>
+
